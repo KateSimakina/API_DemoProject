@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Get one user by ID",
+  "type": "object",
+  "required": [
+    "meta",
+    "data"
+  ],
+  "properties": {
+    "meta": {
+      "title": "Meta",
+      "type": "null",
+      "default": null
+    },
+    "data": {
+      "title": "Data",
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "email",
+        "gender",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "integer",
+          "examples": [
+            20
+          ],
+          "minimum": 1
+        },
+        "name": {
+          "title": "Name",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "Yash Patel"
+          ],
+          "minLength": 2,
+          "maxLength": 15
+        },
+        "email": {
+          "title": "Email",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "yashpatel@gmail.com"
+          ],
+          "pattern": "^\\S+@\\S+\\.\\S+$"
+        },
+        "gender": {
+          "title": "Gender",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "male"
+          ],
+          "pattern": "^(male|female)$"
+        },
+        "status": {
+          "title": "Status",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "active"
+          ],
+          "pattern": "^(active|inactive)$"
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,23 @@
+    /* @Test
+     public void test() {
+
+         //header("Authorization", "Bearer cc08a8c917636538b964b3d3da736bbcfabc37376de295be40b36d0bc3bfb884").
+         //"https://gorest.co.in/public/v1/users"
+
+         given().spec(requestSpecification).
+                 log().all().
+                 when().
+                 get(GET_ALL_USERS_endpoint).
+                 then().
+                 statusCode(200);
+     }
+
+     */
+
+
+     Static reports:
+     import static io.restassured.RestAssured.given;
+     import static org.hamcrest.MatcherAssert.assertThat;
+     import static org.hamcrest.Matchers.is;
+     import static org.junit.jupiter.api.Assertions.assertAll;
+     import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;

@@ -1,0 +1,151 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-13T17:15:54.189Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1038000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.myProject.step_definitions.Hooks.setURL()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Create a user comment",
+        "description": "",
+        "id": "create-a-user-comment-feature;create-a-user-comment",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.myProject.step_definitions.Hooks.cleanUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6111000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user created and the user post created by providing the existing ID",
+            "match": {
+              "location": "com.myProject.step_definitions.CreateComment_API_test.the_user_created_and_the_user_post_created_by_providing_the_existing_id()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1695000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I send a POST request to comments endpoint with valid payload by providing the existing post ID",
+            "match": {
+              "location": "com.myProject.step_definitions.CreateComment_API_test.i_send_a_post_request_to_endpoint_with_valid_payload_by_providing_the_existing_post_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should get the 201 Created http status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 17
+                }
+              ],
+              "location": "com.myProject.step_definitions.CreateComment_API_test.i_should_get_the_created_http_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The response payload should contain following fields:",
+            "match": {
+              "location": "com.myProject.step_definitions.CreateComment_API_test.the_response_payload_should_contain_following_fields(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id"
+                ]
+              },
+              {
+                "cells": [
+                  "post_id"
+                ]
+              },
+              {
+                "cells": [
+                  "name"
+                ]
+              },
+              {
+                "cells": [
+                  "email"
+                ]
+              },
+              {
+                "cells": [
+                  "body"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@comment"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Create a user comment feature",
+    "description": "  User Story: As a user I should be able to create a user comment under a user post",
+    "id": "create-a-user-comment-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CreateComment_API.feature",
+    "tags": [
+      {
+        "name": "@comment",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      },
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 10
+        }
+      }
+    ]
+  }
+]
