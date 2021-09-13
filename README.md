@@ -1,9 +1,5 @@
-- 👋 Hi, I’m Kate
-- 💞️ I'm a Software Developement Engineer in Test
-- 👀 I’m interested in Test automation 
-- 🌱 I’m currently learning JavaScript and AWS
+- This repository contains my `Cucumber/UI/DB/API` testing framework for demonstration purposes.
 
-<!---
-KateSimakina/KateSimakina is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+- Here is the link to the postman goRest manual tests: [Postman goRest collection](https://github.com/KateSimakina/API_DemoProject/blob/master/postman/GoRest.postman_collection.json)
+
+- Please note that only `Cucumber/API` part of the framework is available so far. UI/DB portion is coming soon.
